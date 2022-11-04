@@ -100,7 +100,7 @@ class NetworkServiceTests: XCTestCase {
                                                                                                   data: expectedResponseData,
                                                                                                   error: nil))
         //when
-        _ = sut.request(endPoint: EndpointMock(path: "-;@,?:ą", method: .get)) { result in
+        _ = sut.request(endPoint: EndpointMock(path: "ą", method: .get)) { result in
             do {
                 _ = try result.get()
                 XCTFail("Should throw url generation error")
