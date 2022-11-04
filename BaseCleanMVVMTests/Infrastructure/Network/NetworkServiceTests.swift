@@ -116,7 +116,7 @@ class NetworkServiceTests: XCTestCase {
         })
         
         // then
-        wait(for: [expectation], timeout: 0.1)
+        wait(for: [expectation], timeout: 0.5)
     }
     
     func test_whenStatusCodeEqualOrAbove400_shouldReturnhasStatusCodeError() {
