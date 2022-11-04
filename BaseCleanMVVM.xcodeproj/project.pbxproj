@@ -27,12 +27,19 @@
 		58B3BA8E28F46F48004BB094 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B3BA8C28F46F48004BB094 /* HomeViewController.storyboard */; };
 		58B3BA9028F46F4A004BB094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B3BA8F28F46F4A004BB094 /* Assets.xcassets */; };
 		58B3BA9328F46F4A004BB094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B3BA9128F46F4A004BB094 /* LaunchScreen.storyboard */; };
-		58B3BA9E28F46F4A004BB094 /* BaseCleanMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3BA9D28F46F4A004BB094 /* BaseCleanMVVMTests.swift */; };
 		58B3BAA828F46F4A004BB094 /* BaseCleanMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3BAA728F46F4A004BB094 /* BaseCleanMVVMUITests.swift */; };
 		58B3BAAA28F46F4A004BB094 /* BaseCleanMVVMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B3BAA928F46F4A004BB094 /* BaseCleanMVVMUITestsLaunchTests.swift */; };
 		58B4B2FF2914A59500440A20 /* FetchRecentWeatherQueriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B2FE2914A59500440A20 /* FetchRecentWeatherQueriesUseCase.swift */; };
 		58B4B3012914A73800440A20 /* UseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B3002914A73800440A20 /* UseCase.swift */; };
 		58B4B3032914A7BC00440A20 /* ConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B3022914A7BC00440A20 /* ConnectionError.swift */; };
+		58B4B3072914A9D500440A20 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B3062914A9D500440A20 /* NetworkConfig.swift */; };
+		58B4B30C2914AAE600440A20 /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B30B2914AAE600440A20 /* NetworkConfigurableMock.swift */; };
+		58B4B30E2914AC0300440A20 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B30D2914AC0300440A20 /* DataTransferService.swift */; };
+		58B4B3102914AC3700440A20 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B30F2914AC3700440A20 /* NetworkService.swift */; };
+		58B4B3122914ACB900440A20 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B3112914ACB900440A20 /* Endpoint.swift */; };
+		58B4B3142914B13100440A20 /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B3132914B13100440A20 /* NetworkSessionManagerMock.swift */; };
+		58B4B3162914B18D00440A20 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B3152914B18D00440A20 /* NetworkServiceTests.swift */; };
+		58B4B3182914B3A400440A20 /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B4B3172914B3A400440A20 /* DataTransferServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,13 +83,20 @@
 		58B3BA8F28F46F4A004BB094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58B3BA9228F46F4A004BB094 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58B3BA9928F46F4A004BB094 /* BaseCleanMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseCleanMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		58B3BA9D28F46F4A004BB094 /* BaseCleanMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCleanMVVMTests.swift; sourceTree = "<group>"; };
 		58B3BAA328F46F4A004BB094 /* BaseCleanMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaseCleanMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B3BAA728F46F4A004BB094 /* BaseCleanMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCleanMVVMUITests.swift; sourceTree = "<group>"; };
 		58B3BAA928F46F4A004BB094 /* BaseCleanMVVMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCleanMVVMUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		58B4B2FE2914A59500440A20 /* FetchRecentWeatherQueriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRecentWeatherQueriesUseCase.swift; sourceTree = "<group>"; };
 		58B4B3002914A73800440A20 /* UseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCase.swift; sourceTree = "<group>"; };
 		58B4B3022914A7BC00440A20 /* ConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionError.swift; sourceTree = "<group>"; };
+		58B4B3062914A9D500440A20 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		58B4B30B2914AAE600440A20 /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
+		58B4B30D2914AC0300440A20 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		58B4B30F2914AC3700440A20 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		58B4B3112914ACB900440A20 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		58B4B3132914B13100440A20 /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
+		58B4B3152914B18D00440A20 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		58B4B3172914B3A400440A20 /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +246,7 @@
 		58B3BA8528F46F48004BB094 /* BaseCleanMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				58B4B3042914A98400440A20 /* Infrastructure */,
 				584B15D4290EE41700409910 /* Common */,
 				58830E1D290DC4E7005F070E /* Resources */,
 				58B3BAB928F470B6004BB094 /* Domain */,
@@ -245,7 +260,7 @@
 		58B3BA9C28F46F4A004BB094 /* BaseCleanMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				58B3BA9D28F46F4A004BB094 /* BaseCleanMVVMTests.swift */,
+				58B4B3082914AA1900440A20 /* Infrastructure */,
 			);
 			path = BaseCleanMVVMTests;
 			sourceTree = "<group>";
@@ -296,6 +311,52 @@
 				584B15CB290EDF0200409910 /* Entities */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		58B4B3042914A98400440A20 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				58B4B3052914A9C200440A20 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		58B4B3052914A9C200440A20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				58B4B3062914A9D500440A20 /* NetworkConfig.swift */,
+				58B4B30D2914AC0300440A20 /* DataTransferService.swift */,
+				58B4B30F2914AC3700440A20 /* NetworkService.swift */,
+				58B4B3112914ACB900440A20 /* Endpoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		58B4B3082914AA1900440A20 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				58B4B3092914AA2500440A20 /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		58B4B3092914AA2500440A20 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				58B4B30A2914AACE00440A20 /* Mock */,
+				58B4B3152914B18D00440A20 /* NetworkServiceTests.swift */,
+				58B4B3172914B3A400440A20 /* DataTransferServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		58B4B30A2914AACE00440A20 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				58B4B30B2914AAE600440A20 /* NetworkConfigurableMock.swift */,
+				58B4B3132914B13100440A20 /* NetworkSessionManagerMock.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +430,7 @@
 					};
 					58B3BA9828F46F4A004BB094 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 						TestTargetID = 58B3BA8228F46F48004BB094;
 					};
 					58B3BAA228F46F4A004BB094 = {
@@ -431,6 +493,7 @@
 			files = (
 				584B15D6290EE42500409910 /* Cancellable.swift in Sources */,
 				58A724B3290E2B36004F33E3 /* AppFlowCoordinator.swift in Sources */,
+				58B4B3102914AC3700440A20 /* NetworkService.swift in Sources */,
 				584B15D8290EE4B800409910 /* WeatherRepository.swift in Sources */,
 				584B15D3290EE37E00409910 /* WeatherQuery.swift in Sources */,
 				58A724B8290E43BF004F33E3 /* WeatherSearchFlowCoordinator.swift in Sources */,
@@ -438,14 +501,17 @@
 				58B3BA8B28F46F48004BB094 /* HomeViewController.swift in Sources */,
 				584B15CD290EDF0F00409910 /* Weather.swift in Sources */,
 				58B4B3012914A73800440A20 /* UseCase.swift in Sources */,
+				58B4B3122914ACB900440A20 /* Endpoint.swift in Sources */,
 				584B15DA290EE53000409910 /* WeatherQueriesRepository.swift in Sources */,
 				58A724B5290E3F2E004F33E3 /* WeatherSceneDIContainer.swift in Sources */,
 				58A724AD290E2918004F33E3 /* AppDIContainer.swift in Sources */,
 				58A724A8290E10DD004F33E3 /* WeatherTableViewController.swift in Sources */,
 				584B15D1290EE32800409910 /* SearchWeatherUseCase.swift in Sources */,
+				58B4B3072914A9D500440A20 /* NetworkConfig.swift in Sources */,
 				58A724B1290E2AB9004F33E3 /* AppApperance.swift in Sources */,
 				58A724BB290E4646004F33E3 /* StoryboardInstantiable.swift in Sources */,
 				58B4B2FF2914A59500440A20 /* FetchRecentWeatherQueriesUseCase.swift in Sources */,
+				58B4B30E2914AC0300440A20 /* DataTransferService.swift in Sources */,
 				58A724AF290E2940004F33E3 /* AppConfigurations.swift in Sources */,
 				58B4B3032914A7BC00440A20 /* ConnectionError.swift in Sources */,
 				58B3BA8728F46F48004BB094 /* AppDelegate.swift in Sources */,
@@ -456,7 +522,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58B3BA9E28F46F4A004BB094 /* BaseCleanMVVMTests.swift in Sources */,
+				58B4B3182914B3A400440A20 /* DataTransferServiceTests.swift in Sources */,
+				58B4B30C2914AAE600440A20 /* NetworkConfigurableMock.swift in Sources */,
+				58B4B3162914B18D00440A20 /* NetworkServiceTests.swift in Sources */,
+				58B4B3142914B13100440A20 /* NetworkSessionManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,15 +748,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JSRL669P2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ata.studio.vn.BaseCleanMVVMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BaseCleanMVVM.app/BaseCleanMVVM";
@@ -699,11 +775,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9JSRL669P2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ata.studio.vn.BaseCleanMVVMTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
