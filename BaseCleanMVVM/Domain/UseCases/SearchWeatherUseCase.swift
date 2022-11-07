@@ -10,7 +10,7 @@ import Foundation
 protocol SearchWeatherUseCase {
     func execute(requestValue:SearchWeatherUseCaseRequestValue,
                  cached: @escaping (WeatherPage) -> Void,
-                 completion: @escaping (Result<WeatherPage, Error>) -> Void?) -> Cancellable?
+                 completion: @escaping (Result<WeatherPage, Error>) -> Void) -> Cancellable?
 }
 
 struct SearchWeatherUseCaseRequestValue {
@@ -34,7 +34,7 @@ final class DefaultSearchWeatherUseCase: SearchWeatherUseCase {
     
     func execute(requestValue: SearchWeatherUseCaseRequestValue,
                  cached: @escaping (WeatherPage) -> Void,
-                 completion: @escaping (Result<WeatherPage, Error>) -> Void?) -> Cancellable? {
+                 completion: @escaping (Result<WeatherPage, Error>) -> Void) -> Cancellable? {
         return weatherRepository.fetchWeatherList(query: requestValue.query, page: requestValue.page, cached: cached) { result in
             if case .success = result {
                 self.weatherQueriesRepository.saveRecentQuery(query: requestValue.query) { _ in }

@@ -8,7 +8,7 @@
 import UIKit
 
 protocol WeatherSearchFlowCoordinatorDependencies  {
-    func makeWeatherListViewController() -> HomeViewController
+    func makeWeatherListViewController(actions: WeatherListViewModelActions) -> HomeViewController
 }
 
 final class WeatherSearchFlowCoordinator {
@@ -26,7 +26,18 @@ final class WeatherSearchFlowCoordinator {
     
     func start() {
         // Note: here we keep strong reference with actions, this way this flow do not need to be strong referenced
-        let vc = dependencies.makeWeatherListViewController()
+        let actions = WeatherListViewModelActions(showWeatherQueriesSuggestions: showWeatherQueriesSuggestions,
+                                                  closeWeatherQueriesSuggestions: closeWeatherQueriesSuggestions)
+        
+        let vc = dependencies.makeWeatherListViewController(actions: actions)
         navigationController?.pushViewController(vc, animated: false)
+    }
+    
+    private func showWeatherQueriesSuggestions(didSelect: @escaping (WeatherQuery) -> Void) {
+        
+    }
+
+    private func closeWeatherQueriesSuggestions() {
+        
     }
 }

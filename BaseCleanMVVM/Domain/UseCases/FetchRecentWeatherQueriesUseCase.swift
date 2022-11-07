@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct RequestValue {
-    let maxCount: Int
-}
-
 final class FetchRecentWeatherQueriesUseCase: UseCase {
+    
+    struct RequestValue {
+        let maxCount: Int
+    }
     
     typealias ResultValue = (Result<[WeatherQuery], Error>)
     
