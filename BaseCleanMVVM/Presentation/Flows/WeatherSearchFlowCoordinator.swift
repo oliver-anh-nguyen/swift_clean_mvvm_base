@@ -16,7 +16,7 @@ final class WeatherSearchFlowCoordinator {
     private weak var navigationController: UINavigationController?
     private let dependencies: WeatherSearchFlowCoordinatorDependencies
 
-    private weak var moviesListVC: HomeViewController?
+    private weak var weatherListVC: HomeViewController?
     
     init(navigationController: UINavigationController,
          dependencies: WeatherSearchFlowCoordinatorDependencies) {

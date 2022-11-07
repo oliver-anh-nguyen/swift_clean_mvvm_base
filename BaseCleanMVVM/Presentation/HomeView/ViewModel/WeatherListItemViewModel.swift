@@ -27,7 +27,7 @@ extension WeatherListItemViewModel {
     init(weather: Weather) {
         let average = ((weather.temp.max + weather.temp.min) / 2.0).rounded(.toNearestOrEven)
         let timeStr = DateFormatterHelper.stringForDateInterval(
-            timeIntervalSince1970: weather.dt,
+            timeIntervalSince1970: weather.id,
             format: "EEE, dd MMM yyyy",
             timeIntervalType: .seconds
         )
@@ -35,7 +35,8 @@ extension WeatherListItemViewModel {
         self.averageTemp = String(format: ConstantString.formatAvgTempLbl, average)
         self.pressure = String(format: ConstantString.formatPressureLbl, weather.pressure)
         self.humidity = String(format: ConstantString.formatHumidityLbl, weather.humidity)
-        self.desc = weather.weather.compactMap({ $0.description }).joined(separator: ", ")
+        let des = weather.weather.compactMap({ $0.description }).joined(separator: ", ")
+        self.desc = String(format: ConstantString.formatDescriptionLbl, des)
     }
 }
 

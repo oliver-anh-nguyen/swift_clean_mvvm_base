@@ -86,6 +86,8 @@ final class HomeViewController: UIViewController, StoryboardInstantiable, Alerta
     }
     
     private func setupViews() {
+        title = viewModel.screenTitle
+        lblEmptyData.text = viewModel.emptyDataTitle
         setupSearchController()
     }
     

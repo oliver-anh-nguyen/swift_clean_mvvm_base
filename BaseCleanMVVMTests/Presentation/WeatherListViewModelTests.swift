@@ -15,10 +15,10 @@ class WeatherListViewModelTests: XCTestCase {
     
     let weathersPages: [WeatherPage] = {
         let page1 = WeatherPage(page: 1, totalPages: 1, weathers: [
-            Weather.stub(id: "1", weathers: [WeatherItem.stub(des: "heavy rain"), WeatherItem.stub(des:"light rain")], temp: Temperature.stub(min: 100.20, max: 50.9)),
-            Weather.stub(id: "2", weathers: [WeatherItem.stub()], temp: Temperature.stub()) ])
+            Weather.stub(weathers: [WeatherItem.stub(des: "heavy rain"), WeatherItem.stub(des:"light rain")], temp: Temperature.stub(min: 100.20, max: 50.9)),
+            Weather.stub(weathers: [WeatherItem.stub()], temp: Temperature.stub()) ])
         let page2 = WeatherPage(page: 1, totalPages: 1, weathers: [
-            Weather.stub(id: "1", weathers: [WeatherItem.stub(des: "heavy"), WeatherItem.stub(des:"light")], temp: Temperature.stub(min: 200.20, max: 100.9))
+            Weather.stub(weathers: [WeatherItem.stub(des: "heavy"), WeatherItem.stub(des:"light")], temp: Temperature.stub(min: 200.20, max: 100.9))
         ])
 
         return [page1, page2]

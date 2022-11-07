@@ -60,10 +60,10 @@ final class DefaultWeatherListViewModel: WeatherListViewModel {
     let query: Observable<String> = Observable("")
     let error: Observable<String> = Observable("")
     var isEmpty: Bool { return items.value.isEmpty }
-    let screenTitle = NSLocalizedString("Movies", comment: "")
+    let screenTitle = NSLocalizedString("Weather", comment: "")
     let emptyDataTitle = NSLocalizedString("Search results", comment: "")
     let errorTitle = NSLocalizedString("Error", comment: "")
-    let searchBarPlaceholder = NSLocalizedString("Search Movies", comment: "")
+    let searchBarPlaceholder = NSLocalizedString("Search Weather City", comment: "")
     
     init(searchWeatherUseCase: SearchWeatherUseCase, actions: WeatherListViewModelActions? = nil) {
         self.searchWeatherUseCase = searchWeatherUseCase
@@ -107,7 +107,7 @@ final class DefaultWeatherListViewModel: WeatherListViewModel {
     private func handle(error: Error) {
         self.error.value = error.isInternetConnectionError ?
             NSLocalizedString("No internet connection", comment: "") :
-            NSLocalizedString("Failed loading movies", comment: "")
+            NSLocalizedString("Failed loading weathers", comment: "")
     }
     
     private func update(weatherQuery: WeatherQuery) {

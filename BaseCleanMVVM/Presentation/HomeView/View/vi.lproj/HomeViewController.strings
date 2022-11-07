@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Description:"; ObjectID = "Cs0-FF-8eI"; */
+"Cs0-FF-8eI.text" = "Description:";
+
+/* Class = "UILabel"; text = "Pressure:"; ObjectID = "DlZ-31-c4n"; */
+"DlZ-31-c4n.text" = "Pressure:";
+
+/* Class = "UILabel"; text = "No data"; ObjectID = "FCk-Fv-7eu"; */
+"FCk-Fv-7eu.text" = "No data";
+
+/* Class = "UILabel"; text = "Average Temperature:"; ObjectID = "LDI-L5-42h"; */
+"LDI-L5-42h.text" = "Average Temperature:";
+
+/* Class = "UILabel"; text = "Humidity"; ObjectID = "V5x-9c-gWa"; */
+"V5x-9c-gWa.text" = "Humidity";
+
+/* Class = "UILabel"; text = "Date: "; ObjectID = "nDp-hS-tjx"; */
+"nDp-hS-tjx.text" = "Date: ";

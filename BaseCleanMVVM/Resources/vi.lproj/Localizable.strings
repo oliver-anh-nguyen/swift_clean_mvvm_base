@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  BaseCleanMVVM
+
+  Created by AnhNguyen on 06/11/2022.
+  
+*/
+
+"Weather" = "Thời Tiết";
+"Search results" = "Tìm kết quả";
+"Release Date" = "Ngày";
+"To be announced" = "Đã thông báo";
+"Error" = "Lỗi";
+"No internet connection" = "Không có kết nối mạng";
+"Failed loading weathers" = "Load thời tiết thất bại";
+"Search Weather City" = "Tìm thời tiết của thành phố";

@@ -9,6 +9,16 @@ import UIKit
 
 final class WeatherSceneDIContainer {
     
+    struct Dependencies {
+        let apiDataTransferService: DataTransferService
+    }
+    
+    private let dependencies: Dependencies
+    
+    init(dependencies: Dependencies) {
+        self.dependencies = dependencies
+    }
+    
     func makeWeatherSearchFlowCoordinator(navigationController: UINavigationController) -> WeatherSearchFlowCoordinator {
         return WeatherSearchFlowCoordinator(navigationController: navigationController, dependencies: self)
     }
@@ -31,7 +41,7 @@ final class WeatherSceneDIContainer {
     
     // MARK: - Repositories
     func makeWeatherRepository() -> WeatherRepository {
-        return DefaultWeatherRepository()
+        return DefaultWeatherRepository(dataTransferService: dependencies.apiDataTransferService)
     }
     func makeWeatherQueriesRepository() -> WeatherQueriesRepository {
         return DefaultWeatherQueriesRepository()

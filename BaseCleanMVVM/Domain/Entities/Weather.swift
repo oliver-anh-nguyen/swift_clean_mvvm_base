@@ -8,9 +8,8 @@
 import Foundation
 
 struct Weather: Equatable, Identifiable {
-    typealias Identifier = String
+    typealias Identifier = TimeInterval
     let id: Identifier
-    let dt: TimeInterval
     let pressure: Int
     let humidity: Int
     let weather: [WeatherItem]

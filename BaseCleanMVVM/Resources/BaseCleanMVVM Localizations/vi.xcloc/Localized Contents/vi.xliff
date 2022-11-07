@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="BaseCleanMVVM/Presentation/HomeView/View/Base.lproj/HomeViewController.storyboard" source-language="en" target-language="vi" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="Cs0-FF-8eI.text" xml:space="preserve">
+        <source>Description:</source>
+        <target>Description:</target>
+        <note>Class = "UILabel"; text = "Description:"; ObjectID = "Cs0-FF-8eI";</note>
+      </trans-unit>
+      <trans-unit id="DlZ-31-c4n.text" xml:space="preserve">
+        <source>Pressure:</source>
+        <target>Pressure:</target>
+        <note>Class = "UILabel"; text = "Pressure:"; ObjectID = "DlZ-31-c4n";</note>
+      </trans-unit>
+      <trans-unit id="FCk-Fv-7eu.text" xml:space="preserve">
+        <source>No data</source>
+        <target>No data</target>
+        <note>Class = "UILabel"; text = "No data"; ObjectID = "FCk-Fv-7eu";</note>
+      </trans-unit>
+      <trans-unit id="LDI-L5-42h.text" xml:space="preserve">
+        <source>Average Temperature:</source>
+        <target>Average Temperature:</target>
+        <note>Class = "UILabel"; text = "Average Temperature:"; ObjectID = "LDI-L5-42h";</note>
+      </trans-unit>
+      <trans-unit id="V5x-9c-gWa.text" xml:space="preserve">
+        <source>Humidity</source>
+        <target>Humidity</target>
+        <note>Class = "UILabel"; text = "Humidity"; ObjectID = "V5x-9c-gWa";</note>
+      </trans-unit>
+      <trans-unit id="nDp-hS-tjx.text" xml:space="preserve">
+        <source>Date: </source>
+        <target>Date: </target>
+        <note>Class = "UILabel"; text = "Date: "; ObjectID = "nDp-hS-tjx";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="BaseCleanMVVM/Resources/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="vi">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>BaseCleanMVVM</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="BaseCleanMVVM/Resources/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="vi">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="13.4.1" build-num="13F100"/>
+    </header>
+    <body>
+      <trans-unit id="Error" xml:space="preserve">
+        <source>Error</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Failed loading weathers" xml:space="preserve">
+        <source>Failed loading weathers</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No internet connection" xml:space="preserve">
+        <source>No internet connection</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Search Weather City" xml:space="preserve">
+        <source>Search Weather City</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Search results" xml:space="preserve">
+        <source>Search results</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Weather" xml:space="preserve">
+        <source>Weather</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -59,6 +59,10 @@
 		58D90E6E291893C800E8EF00 /* WeatherQueryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D90E6D291893C800E8EF00 /* WeatherQueryListViewModel.swift */; };
 		58D90E702918960800E8EF00 /* WeatherQueriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D90E6F2918960800E8EF00 /* WeatherQueriesTableViewController.swift */; };
 		58D90E722918962400E8EF00 /* WeatherQueriesTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58D90E712918962400E8EF00 /* WeatherQueriesTableViewController.storyboard */; };
+		58D90E752918B25A00E8EF00 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D90E742918B25A00E8EF00 /* APIEndpoints.swift */; };
+		58D90E772918B28E00E8EF00 /* WeatherRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D90E762918B28E00E8EF00 /* WeatherRequestDTO+Mapping.swift */; };
+		58D90E792918B39300E8EF00 /* WeatherResponseDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D90E782918B39300E8EF00 /* WeatherResponseDTO+Mapping.swift */; };
+		58D90E812918C81700E8EF00 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 58D90E832918C81700E8EF00 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +139,12 @@
 		58D90E6D291893C800E8EF00 /* WeatherQueryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherQueryListViewModel.swift; sourceTree = "<group>"; };
 		58D90E6F2918960800E8EF00 /* WeatherQueriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherQueriesTableViewController.swift; sourceTree = "<group>"; };
 		58D90E712918962400E8EF00 /* WeatherQueriesTableViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WeatherQueriesTableViewController.storyboard; sourceTree = "<group>"; };
+		58D90E742918B25A00E8EF00 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		58D90E762918B28E00E8EF00 /* WeatherRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
+		58D90E782918B39300E8EF00 /* WeatherResponseDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeatherResponseDTO+Mapping.swift"; sourceTree = "<group>"; };
+		58D90E7A2918C62000E8EF00 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/HomeViewController.strings; sourceTree = "<group>"; };
+		58D90E822918C81700E8EF00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		58D90E842918C81800E8EF00 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +215,7 @@
 				58830E25290DC707005F070E /* Info.plist */,
 				58B3BA8F28F46F4A004BB094 /* Assets.xcassets */,
 				58B3BA9128F46F4A004BB094 /* LaunchScreen.storyboard */,
+				58D90E832918C81700E8EF00 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -347,6 +358,7 @@
 		58B3BAB828F470AC004BB094 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				58D90E732918B24000E8EF00 /* Network */,
 				58D90E5429186E5200E8EF00 /* Repositories */,
 			);
 			path = Data;
@@ -480,6 +492,16 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		58D90E732918B24000E8EF00 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				58D90E742918B25A00E8EF00 /* APIEndpoints.swift */,
+				58D90E762918B28E00E8EF00 /* WeatherRequestDTO+Mapping.swift */,
+				58D90E782918B39300E8EF00 /* WeatherResponseDTO+Mapping.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,6 +589,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = 58B3BA7A28F46F48004BB094;
 			productRefGroup = 58B3BA8428F46F48004BB094 /* Products */;
@@ -585,6 +608,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58D90E812918C81700E8EF00 /* Localizable.strings in Resources */,
 				58D90E722918962400E8EF00 /* WeatherQueriesTableViewController.storyboard in Resources */,
 				58B3BA9328F46F4A004BB094 /* LaunchScreen.storyboard in Resources */,
 				58B3BA9028F46F4A004BB094 /* Assets.xcassets in Resources */,
@@ -630,10 +654,12 @@
 				58B4B31C2914BBC900440A20 /* WeatherListViewModel.swift in Sources */,
 				584B15DA290EE53000409910 /* WeatherQueriesRepository.swift in Sources */,
 				58B4B31E2914C0C000440A20 /* Observable.swift in Sources */,
+				58D90E772918B28E00E8EF00 /* WeatherRequestDTO+Mapping.swift in Sources */,
 				58A724B5290E3F2E004F33E3 /* WeatherSceneDIContainer.swift in Sources */,
 				58A724AD290E2918004F33E3 /* AppDIContainer.swift in Sources */,
 				58D90E5629186E6C00E8EF00 /* DefaultWeatherRepository.swift in Sources */,
 				58A724A8290E10DD004F33E3 /* WeatherTableViewController.swift in Sources */,
+				58D90E752918B25A00E8EF00 /* APIEndpoints.swift in Sources */,
 				58D90E4D2918248A00E8EF00 /* UIViewController+ActivityIndicator.swift in Sources */,
 				584B15D1290EE32800409910 /* SearchWeatherUseCase.swift in Sources */,
 				58B4B31A2914BBBE00440A20 /* WeatherListItemViewModel.swift in Sources */,
@@ -647,6 +673,7 @@
 				58B4B30E2914AC0300440A20 /* DataTransferService.swift in Sources */,
 				58A724AF290E2940004F33E3 /* AppConfigurations.swift in Sources */,
 				58D90E5829186EF400E8EF00 /* RepositoryTask.swift in Sources */,
+				58D90E792918B39300E8EF00 /* WeatherResponseDTO+Mapping.swift in Sources */,
 				58B4B3032914A7BC00440A20 /* ConnectionError.swift in Sources */,
 				58D90E532918695300E8EF00 /* LoadingView.swift in Sources */,
 				58D90E6E291893C800E8EF00 /* WeatherQueryListViewModel.swift in Sources */,
@@ -698,6 +725,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				58B3BA8D28F46F48004BB094 /* Base */,
+				58D90E7A2918C62000E8EF00 /* vi */,
 			);
 			name = HomeViewController.storyboard;
 			sourceTree = "<group>";
@@ -710,6 +738,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		58D90E832918C81700E8EF00 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58D90E822918C81700E8EF00 /* en */,
+				58D90E842918C81800E8EF00 /* vi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -717,6 +754,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -769,6 +807,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -777,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -822,6 +862,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -830,6 +871,8 @@
 		58B3BAAE28F46F4A004BB094 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "https://api.openweathermap.org";
+				API_KEY = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -858,6 +901,8 @@
 		58B3BAAF28F46F4A004BB094 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				API_BASE_URL = "https://api.openweathermap.org";
+				API_KEY = "";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
